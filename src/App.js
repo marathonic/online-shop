@@ -98,7 +98,6 @@ function App() {
         [itemName]: prevItemsInCart[itemName] - 1,
       };
 
-
       return newCart;
     });
   };
@@ -177,7 +176,7 @@ function App() {
       <div className="container">
         <Routes>
           <Route
-            path="/"
+            path="/online-shop/"
             element={<SharedLayout itemsInCart={itemsInCart} user={user} />}
           >
             <Route index element={<Home user={user} banner={banner} />} />
