@@ -93,7 +93,7 @@ const CartSection = ({
         <Link style={linkedImg} to={`/products/${itemObj.id}`}>
           <img
             // src={process.env.PUBLIC_URL + "/" + itemObj.image + ".jpg"}
-            src={process.env.PUBLIC_URL + `/${itemObj.image}`}
+            src={`/${itemObj.image}`}
             alt={itemObj.name}
             className="item-thumbnail"
           />
