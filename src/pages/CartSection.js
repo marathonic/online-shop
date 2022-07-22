@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { nanoid } from "nanoid";
 import { IoCartOutline } from "react-icons/io5";
 import { FaInfoCircle } from "react-icons/fa";
@@ -30,7 +30,6 @@ const CartSection = ({
   const [cost, setCost] = useState(0);
   const [conversionDisplay, setConversionDisplay] = useState(false);
 
-  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
 
   useEffect(() => {
@@ -46,9 +45,6 @@ const CartSection = ({
         for (let i = 0; i < arrayedAmounts.length; i++) {
           multiplied.push(prices[i] * arrayedAmounts[i]);
         }
-        console.log(arrayedAmounts);
-        console.log(prices);
-        console.log(multiplied);
         return multiplied.reduce((a, b) => a + b, 0);
       });
     };

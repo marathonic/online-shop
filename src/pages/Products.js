@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import products from "../data";
-import MediaQuery from "react-responsive";
 
 const Products = () => {
   return (
@@ -20,9 +19,6 @@ const Products = () => {
                   <span>{product.price.toLocaleString("en-US")} ʛ</span>
                   {/* read more */}
                 </div>
-                {/* <MediaQuery query="(max-width: 600px)">
-                <hr className="product-separator" />
-              </MediaQuery> */}
               </article>
             </Link>
           );

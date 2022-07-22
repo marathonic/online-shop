@@ -4,16 +4,11 @@ import { useNavigate } from "react-router-dom";
 const Login = ({ user, setUser }) => {
   const navigate = useNavigate();
 
-  //the following useEffect may be unnecessary now that we've fixed the styling from
-  //within StyledNavbar (sharedLayout --> StyledNavbar, passing the user, line 53 in StyledNavbar)
-
   useEffect(() => {
     if (user) {
       navigate("/dashboard");
     }
   }, [navigate, user]);
-
-  // ^read above. Do not remove the next code.
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -44,6 +39,7 @@ const Login = ({ user, setUser }) => {
             type="text"
             className="form-input"
             id="name"
+            placeholder="e.g: Neville"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -56,12 +52,13 @@ const Login = ({ user, setUser }) => {
             type="email"
             className="form-input"
             id="email"
+            placeholder="e.g: example@owl.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <button type="submit" className="btn btn-block">
-          Enter
+          Alohomora
         </button>
       </form>
     </section>

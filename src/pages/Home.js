@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import getSeason from "../components/helper-functions/getSeason";
 import products from "../data";
 import { nanoid } from "nanoid";
 
@@ -52,11 +51,10 @@ function Home({ user, banner }) {
         <hr className="horizontal-line" />
         <div className="best-sellers">
           <span className="subsection">Best sellers</span>
-          {/* <------------------ CONTINUE HERE!!!--------------------------->
-            Now all we need to do is 3 things:
-            X) Link to some random items in our Home screen
-            Y) Make each item in CartSection --Link-- to its own SingleProductPage
-            Z) Save the cart in localStorage */}
+          {/* Removed the cart from localStorage, 
+          given that in this case, it would only 
+          serve to hinder the testing experience
+          for our target user (who's likely going to be reloading the page).*/}
           <ul className="best-sellers-list">{reccies}</ul>
         </div>
       </section>

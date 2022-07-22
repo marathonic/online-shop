@@ -43,7 +43,6 @@ function App() {
 
   const addToCart = (item) => {
     setInCart((prevInCart) => [...prevInCart, item]);
-    console.log(inCart);
   };
 
   const removeFromCartTotally = (itemId) => {
@@ -59,7 +58,6 @@ function App() {
       let currentObj = data[i];
       allItemNames[currentObj.name] = 0; //<-- initialise all itemsInCart at 0
     }
-    console.log(allItemNames);
     return allItemNames;
   };
 
@@ -88,7 +86,6 @@ function App() {
         ...prevItemsInCart,
         [itemName]: prevItemsInCart[itemName] + 1,
       };
-      console.log(newCart);
       return newCart;
     });
   };
@@ -101,7 +98,6 @@ function App() {
         [itemName]: prevItemsInCart[itemName] - 1,
       };
 
-      console.log(newCart);
 
       return newCart;
     });
@@ -172,7 +168,6 @@ function App() {
         ...prevItemsInCart,
         [itemName]: 0,
       };
-      console.log(newCart);
       return newCart;
     });
   };
