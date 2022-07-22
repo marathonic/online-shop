@@ -74,7 +74,7 @@ const CartSection = ({
             }}
             onClick={() =>
               window.open(
-                "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1",
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1",
                 "_blank"
               )
             }
@@ -93,7 +93,7 @@ const CartSection = ({
         <Link style={linkedImg} to={`/products/${itemObj.id}`}>
           <img
             // src={process.env.PUBLIC_URL + "/" + itemObj.image + ".jpg"}
-            src={`/${itemObj.image}`}
+            src={process.env.PUBLIC_URL + itemObj.image}
             alt={itemObj.name}
             className="item-thumbnail"
           />
