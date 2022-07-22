@@ -10,7 +10,7 @@ const Products = () => {
             <Link to={`/products/${product.id}`} key={product.id}>
               <article className="product-container">
                 <img
-                  src={product.image}
+                  src={process.env.PUBLIC_URL + product.image}
                   alt={product.name}
                   className="item-thumbnail"
                 />

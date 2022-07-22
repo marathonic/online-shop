@@ -31,7 +31,7 @@ function Home({ user, banner }) {
             }}
           >
             <img
-              src={product.image}
+              src={process.env.PUBLIC_URL + product.image}
               alt={product.name}
               className="item-thumbnail"
             />

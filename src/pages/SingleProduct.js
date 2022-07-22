@@ -26,7 +26,7 @@ const SingleProduct = (props) => {
 
   return (
     <section className="section product">
-      <img src={image} alt={name} style={{ maxWidth: "50%" }} />
+      <img src={process.env.PUBLIC_URL + image} alt={name} style={{ maxWidth: "50%" }} />
       <div
         style={{
           width: "100%",
@@ -47,7 +47,7 @@ const SingleProduct = (props) => {
             onClick={() => {
               addToCart(product);
               addItemToCart(name);
-            }}
+              }}
           >
             add to cart
           </button>
