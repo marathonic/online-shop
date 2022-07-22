@@ -18,6 +18,7 @@ function Home({ user, banner }) {
   };
 
   const randomProducts = getRandomProducts();
+  // let bannerName = `/${season}-banner.jpg`;
 
   const reccies = randomProducts.map((product) => {
     return (

@@ -172,11 +172,11 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/online-shop/">
       <div className="container">
         <Routes>
           <Route
-            path="/online-shop/"
+            path="/"
             element={<SharedLayout itemsInCart={itemsInCart} user={user} />}
           >
             <Route index element={<Home user={user} banner={banner} />} />
