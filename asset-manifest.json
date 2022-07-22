@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/online-shop/static/css/main.ec5ede7a.css",
-    "main.js": "/online-shop/static/js/main.2e4705ea.js",
+    "main.js": "/online-shop/static/js/main.3d77cfa9.js",
     "static/media/Questrial-Regular.ttf": "/online-shop/static/media/Questrial-Regular.8268e81790f4302669b7.ttf",
     "static/media/Yellowtail-Regular.ttf": "/online-shop/static/media/Yellowtail-Regular.68015177cbf9575be4a4.ttf",
     "index.html": "/online-shop/index.html",
     "main.ec5ede7a.css.map": "/online-shop/static/css/main.ec5ede7a.css.map",
-    "main.2e4705ea.js.map": "/online-shop/static/js/main.2e4705ea.js.map"
+    "main.3d77cfa9.js.map": "/online-shop/static/js/main.3d77cfa9.js.map"
   },
   "entrypoints": [
     "static/css/main.ec5ede7a.css",
-    "static/js/main.2e4705ea.js"
+    "static/js/main.3d77cfa9.js"
   ]
 }
